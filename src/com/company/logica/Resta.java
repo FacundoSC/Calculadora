@@ -7,15 +7,15 @@ public class Resta implements  Operacion{
     private double operando1;
     private  double operando2;
 
+
     public Resta(double operando1, double operando2) {
-        this.operando1= operando1;
+        this.operando1 = operando1;
         this.operando2 = operando2;
     }
 
     @Override
     public double operar() {
-        double resultado = operando1- operando2;
-        return resultado;
+        return operando1- operando2;
     }
 
     @Override
@@ -32,4 +32,5 @@ public class Resta implements  Operacion{
     public String obtenerNombreOperacion() {
         return this.getClass().getSimpleName().toLowerCase();
     }
+
 }

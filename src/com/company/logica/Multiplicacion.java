@@ -1,7 +1,5 @@
 package com.company.logica;
 
-import com.company.presentacion.Menu;
-
 public class Multiplicacion implements  Operacion{
     private double operando1;
     private double operando2;

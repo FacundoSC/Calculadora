@@ -10,12 +10,12 @@ public class MenuControl {
     private Scanner scanner;
 
 
-    public MenuControl(Menu menu, Opcion op, Scanner scanner) {
+
+    public MenuControl(Menu menu,Opcion op,Scanner scanner){
         this.menu = menu;
         this.op = op;
         this.scanner = scanner;
     }
-
 
     public void iniciar() {
         Operacion operacion;
@@ -58,6 +58,7 @@ public class MenuControl {
                     } catch (ArithmeticException e) {
                         System.out.println(e.getMessage());
                     }
+
                     break;
                 default:
                     menu.opcionInvalido();
